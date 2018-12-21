@@ -1,0 +1,10 @@
+@(usuario : Form[Usuario])(cds : List[Cd])
+@usuario.get.nome
+
+@for(cd <- cds){
+	@cd.nome
+	<br>
+	@cd.descricao
+}
+<br>
+<a href="@routes.HomeController.createCd"><button>Adicionar CD</button></a>

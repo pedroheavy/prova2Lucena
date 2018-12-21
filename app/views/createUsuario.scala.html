@@ -1,0 +1,14 @@
+@(usuariosForm : Form[Usuario])
+@import helper._
+<h1> Adicionar Usuario </h1>
+
+
+ 				<form action="@routes.HomeController.saveUsuario()" method="post">
+					<label style="color: blue;">Nome</label>
+					<input name="nome" type="text" class="form-control" required>
+					<label style="color: blue;">Senha</label>
+					<input name="senha" type="password" class="form-control" required>
+					<div class="form-group col-md-6" style="margin-top: 20px;">
+						<button class="subscribe btn btn-primary btn-block" type="submit">Adicionar Usuario</button>
+					</div>
+				</form>

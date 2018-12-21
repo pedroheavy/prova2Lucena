@@ -1,0 +1,14 @@
+@(cdForm : Form[Cd])
+@import helper._
+<h1> Adicionar CD </h1>
+
+				<br>
+ 				<form action="@routes.HomeController.saveCd()" method="post">
+					<label style="color: black;">Nome</label>
+					<input name="nome" type="text" class="form-control" required>
+					<label style="color: black;">Descricao</label>
+					<input name="descricao" type="text" class="form-control" required>
+					<div class="form-group col-md-6" style="margin-top: 20px;">
+						<button class="subscribe btn btn-primary btn-block" type="submit">Adicionar CD</button>
+					</div>
+				</form>
